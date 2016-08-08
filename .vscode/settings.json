@@ -1,0 +1,13 @@
+// Workspace settings
+{
+    // The following will hide the js and map files in the editor
+    "files.exclude": {
+        "node_modules": true,
+        "typings": true,
+        "**/*.js.map": true,
+        "**/*.js": {
+            // Only hide js when there is a ts file with the same name
+            "when": "$(basename).ts"
+        }
+    }
+}
